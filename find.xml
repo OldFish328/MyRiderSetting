@@ -1,8 +1,8 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="File 'MatEntity.cs'" />
-    <option name="defaultScopeName" value="File 'MatEntity.cs'" />
-    <option name="SEARCH_SCOPE" value="File 'MatEntity.cs'" />
+    <option name="customScope" value="File '…\Assets\Scripts\UI\ItemUi.cs'" />
+    <option name="defaultScopeName" value="File '…\Assets\Scripts\UI\ItemUi.cs'" />
+    <option name="SEARCH_SCOPE" value="File '…\Assets\Scripts\UI\ItemUi.cs'" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.xml</mask>
