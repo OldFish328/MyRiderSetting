@@ -1,9 +1,11 @@
 <application>
   <component name="Translation.Cache">
-    <option name="lastTrimTime" value="1679456486040" />
+    <option name="lastTrimTime" value="1682501637680" />
   </component>
   <component name="Translation.States">
     <histories>
+      <item value="If you want to create more than one entity from the data in this class" />
+      <item value="It's also OK to not add any at all" />
       <item value="The indent level of the field labels" />
       <item value="Trying to destroy object that is already released to pool" />
       <item value="Shadowmap sampling matrix, from world space into shadowmap space" />
@@ -13,8 +15,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="5" />
-        <entry key="ENGLISH" value="6" />
+        <entry key="CHINESE" value="7" />
+        <entry key="ENGLISH" value="8" />
       </map>
     </option>
   </component>
