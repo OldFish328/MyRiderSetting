@@ -4,6 +4,7 @@
   </component>
   <component name="Translation.States">
     <histories>
+      <item value="A thread-safe command buffer that can buffer commands that affect entities and components for later playback." />
       <item value="If you want to create more than one entity from the data in this class" />
       <item value="It's also OK to not add any at all" />
       <item value="The indent level of the field labels" />
@@ -15,8 +16,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="7" />
-        <entry key="ENGLISH" value="8" />
+        <entry key="CHINESE" value="8" />
+        <entry key="ENGLISH" value="9" />
       </map>
     </option>
   </component>
