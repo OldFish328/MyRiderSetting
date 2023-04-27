@@ -4,6 +4,10 @@
   </component>
   <component name="Translation.States">
     <histories>
+      <item value="[WriteGroup] Can exclude components which are unknown at the time of creating the query that have been declared to write to the same component." />
+      <item value="[WriteGroup] Can exclude components which are unknown at the time of creating the query that have been declared to write to the same component. This allows for extending systems of components safely without editing the previously existing systems. The goal is to have a way for systems that expect to transform data from one set of components (inputs) to another (output[s]) be able to declare that explicit transform, and they exclusively know about one set of inputs. If there are other inputs that want to write to the same output, the query shouldn't match because it's a nonsensicalunhandled setup. It's both a way to guard against nonsensical components (having two systems write to the same output value), and a way to &quot;turn off&quot; existing systemsqueries by putting a component with the same write lock on an entity, letting another system handle it." />
+      <item value="For simple systems that only run a single job and don't need to access the JobHandle themselves, it can be omitted from the Entities.ForEach() call. The job will implicitly use the system's Dependency handle as its input dependency, and update the system's Dependency property to contain the scheduled job's handle." />
+      <item value="Referenced prefabs have to be declared so that the conversion system knows about them ahead of time" />
       <item value="A unique index for each set of commands added to this EntityCommandBuffer across all parallel jobs writing commands to this buffer. The `entityInQueryIndex` argument provided by" />
       <item value="this overload exists here with the sole purpose of being able to give the user a not-totally-horrible experience when they try to use an unsupported lambda signature. When this happens, the C compiler will go through its overload resolution, take the first candidate, and explain the user why the users lambda is incompatible with that first candidates' parametertype. We put this method here, instead of with the other .ForEach overloads, to make sure this is the overload that the c compiler will pick when generating its compiler error. If we didn't do that, it might pick a completely unrelated .ForEach extention method, like the one for IJobChunk. The only communication channel we have to the user to guide them to figuring out what their problem is is the name of the expected delegate type, as the c compiler will put that in its compiler error message. so we take this very unconventional approach here of encoding a message for the user in that type name, that is easily googlable, so they will end up at a documentation page that describes why some lambda signatures are compatible, and why some aren't, and what to do about that. the reason the delegate type is in the global namespace, is that it makes for a cleaner error message it's marked with an attribute to prevent it from showing up in intellisense." />
       <item value="Start of query creating functions for ForEachLambdaJobDescription. Unfortunately there's no C way to use generics to make these work for multiple jobdescription types, so we're lowteching it with t4 here." />
@@ -19,8 +23,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="11" />
-        <entry key="ENGLISH" value="12" />
+        <entry key="CHINESE" value="15" />
+        <entry key="ENGLISH" value="16" />
       </map>
     </option>
   </component>
