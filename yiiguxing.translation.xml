@@ -4,6 +4,9 @@
   </component>
   <component name="Translation.States">
     <histories>
+      <item value="A unique index for each set of commands added to this EntityCommandBuffer across all parallel jobs writing commands to this buffer. The `entityInQueryIndex` argument provided by" />
+      <item value="this overload exists here with the sole purpose of being able to give the user a not-totally-horrible experience when they try to use an unsupported lambda signature. When this happens, the C compiler will go through its overload resolution, take the first candidate, and explain the user why the users lambda is incompatible with that first candidates' parametertype. We put this method here, instead of with the other .ForEach overloads, to make sure this is the overload that the c compiler will pick when generating its compiler error. If we didn't do that, it might pick a completely unrelated .ForEach extention method, like the one for IJobChunk. The only communication channel we have to the user to guide them to figuring out what their problem is is the name of the expected delegate type, as the c compiler will put that in its compiler error message. so we take this very unconventional approach here of encoding a message for the user in that type name, that is easily googlable, so they will end up at a documentation page that describes why some lambda signatures are compatible, and why some aren't, and what to do about that. the reason the delegate type is in the global namespace, is that it makes for a cleaner error message it's marked with an attribute to prevent it from showing up in intellisense." />
+      <item value="Start of query creating functions for ForEachLambdaJobDescription. Unfortunately there's no C way to use generics to make these work for multiple jobdescription types, so we're lowteching it with t4 here." />
       <item value="A thread-safe command buffer that can buffer commands that affect entities and components for later playback." />
       <item value="If you want to create more than one entity from the data in this class" />
       <item value="It's also OK to not add any at all" />
@@ -16,8 +19,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="8" />
-        <entry key="ENGLISH" value="9" />
+        <entry key="CHINESE" value="11" />
+        <entry key="ENGLISH" value="12" />
       </map>
     </option>
   </component>
