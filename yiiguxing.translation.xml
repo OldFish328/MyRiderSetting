@@ -4,6 +4,9 @@
   </component>
   <component name="Translation.States">
     <histories>
+      <item value="Include archetypes that contain at least one (but possibly more) of the component types in the Any list." />
+      <item value="Exclude archetypes that contain any of the component types in the None list." />
+      <item value="The maximum acceleration of an agent as it follows a path, given in units" />
       <item value="Static counterpart of PurgeCache" />
       <item value="Purge" />
       <item value="This accumulates the `positions` (separations) and `headings` (alignments) of all the boids in each cell to: 1) count the number of boids in each cell 2) find the nearest obstacle and target to each boid cell 3) track which array entry contains the accumulated values for each boid's cell In this context, the cell represents the hashed bucket of boids that are near one another within cellRadius floored to the nearest int3. Note: `IJobNativeMultiHashMapMergedSharedKeyIndices` is a custom job to iterate safelyefficiently over the NativeContainer used in this sample (`NativeMultiHashMap`). Currently these kinds of changes or additions of custom jobs generally require access to datafields that aren't available through the `public` API of the containers. This is why the custom job type `IJobNativeMultiHashMapMergedSharedKeyIndicies` is declared in the DOTS package (which can see the `internal` container fields) and not in the Boids sample." />
@@ -46,8 +49,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="38" />
-        <entry key="ENGLISH" value="39" />
+        <entry key="CHINESE" value="42" />
+        <entry key="ENGLISH" value="43" />
       </map>
     </option>
   </component>
