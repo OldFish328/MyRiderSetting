@@ -4,6 +4,15 @@
   </component>
   <component name="Translation.States">
     <histories>
+      <item value="Static counterpart of PurgeCache" />
+      <item value="Purge" />
+      <item value="This accumulates the `positions` (separations) and `headings` (alignments) of all the boids in each cell to: 1) count the number of boids in each cell 2) find the nearest obstacle and target to each boid cell 3) track which array entry contains the accumulated values for each boid's cell In this context, the cell represents the hashed bucket of boids that are near one another within cellRadius floored to the nearest int3. Note: `IJobNativeMultiHashMapMergedSharedKeyIndices` is a custom job to iterate safelyefficiently over the NativeContainer used in this sample (`NativeMultiHashMap`). Currently these kinds of changes or additions of custom jobs generally require access to datafields that aren't available through the `public` API of the containers. This is why the custom job type `IJobNativeMultiHashMapMergedSharedKeyIndicies` is declared in the DOTS package (which can see the `internal` container fields) and not in the Boids sample." />
+      <item value="he relative vertical displacement of the owning GameObject." />
+      <item value="The desired velocity of the agent including any potential contribution from avoidance" />
+      <item value="Get the current steering target along the path" />
+      <item value="Obstacle" />
+      <item value="Returns the primary entity associated with the given object. This entity is from the destination world." />
+      <item value="Entity indexes are recycled when an entity is destroyed. When an entity is destroyed, the EntityManager increments the version identifier. To represent the same entity, both the Index and the Version fields of the Entity object must match. If the Index is the same, but the Version is different, then the entity has been recycled." />
       <item value="An entity that is deferred and will be fully realized when this EntityCommandBuffer is played back" />
       <item value="A unique index for each set of commands added to this EntityCommandBuffer across all parallel jobs writing commands to this buffer. The `entityInQueryIndex` argument provided by &lt;see cref=&quot;SystemBase.Entities&quot;&gt; is an appropriate value to use for this parameter. In an &lt;see cref=&quot;IJobEntityBatch&quot;&gt; pass the 'batchIndex' value from &lt;see cref=&quot;IJobEntityBatch.Execute(ArchetypeChunk, int)&quot;&gt;." />
       <item value="An instantiated entity will have the same components and component values as the prefab entity, minus the Prefab tag component. Behavior at Playback: This command will throw an error if the source entity was destroyed before playback." />
@@ -37,8 +46,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="29" />
-        <entry key="ENGLISH" value="30" />
+        <entry key="CHINESE" value="38" />
+        <entry key="ENGLISH" value="39" />
       </map>
     </option>
   </component>
